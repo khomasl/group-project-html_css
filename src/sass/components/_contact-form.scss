@@ -1,0 +1,54 @@
+.section--contact {
+  text-align: center;
+
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+.contacts-form {
+  margin-top: 35px;
+  max-width: 265px;
+  @media screen and (min-width: $tablet) {
+    max-width: 410px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 430px;
+  }
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts-form__field {
+  width: 100%;
+  padding-bottom: 2px;
+  border: none;
+  font-family: Montserrat;
+  line-height: 1.2;
+  background-color: transparent;
+  color: var(--fontColor);
+  outline-color: var(--placeholderColor);
+  border-bottom: 1px solid var(--accentColor);
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  &::placeholder {
+    line-height: 1.25;
+    color: var(--placeholderColor);
+  }
+  &:invalid:not(:focus) {
+    color: rgb(255, 0, 0);
+  }
+}
+
+.text-area {
+  resize: none;
+}

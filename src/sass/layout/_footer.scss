@@ -1,0 +1,67 @@
+.footer__container {
+  @media screen and (min-width: $tablet) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.section-footer {
+  position: relative;
+}
+.footer-social {
+  text-align: center;
+  margin-bottom: 34px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 51px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 35px;
+  }
+}
+.footer__addr {
+  @media screen and (min-width: $tablet) {
+    max-width: 635px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 825px;
+  }
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__link {
+  color: var(--fontColor);
+  line-height: 1.25;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--hoverColor);
+  }
+}
+
+.footer__img-flour {
+  position: absolute;
+  width: 87px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+
+  @media screen and (min-width: $tablet) {
+    width: 147px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 319px;
+  }
+}
+
+.footer__contact-icon {
+  fill: currentColor;
+  margin-right: 3px;
+}
